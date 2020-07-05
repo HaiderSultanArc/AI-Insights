@@ -1,11 +1,11 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0) # VideoCapture captures the video, its arguments are Camera Index number (Simply the number of camera to be used, out of all connected ones) or name of Video file
 
 while(True):
     # Capture frame-by-frame
-    ret, frame = cap.read()
+    ret, frame = cap.read() # read(self, image) , self = VideoCapture,  read() method reads the Video we are Capturing, it returns True in case of Correctly capturing of Video and False otherwise
    
     # Display the resulting frame
     cv2.imshow('frame',frame)
