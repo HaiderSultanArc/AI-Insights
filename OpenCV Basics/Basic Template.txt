@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 
+
 cap = cv2.VideoCapture(0) # VideoCapture captures the video, its arguments are Camera Index number (Simply the number of camera to be used, out of all connected ones) or name of Video file
 
 while(True):
