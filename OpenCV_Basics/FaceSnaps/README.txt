@@ -1,0 +1,1 @@
+I created this to generate Data-Set for my Face-Recognition System..... It takes snaps of the Faces in Video
