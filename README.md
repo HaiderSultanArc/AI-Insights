@@ -1,2 +1,2 @@
 # AI-Trivials
-This repo consists of individuals components of AIs and solutions for them!
+This repo consists of trivial and custom solutions for AI
