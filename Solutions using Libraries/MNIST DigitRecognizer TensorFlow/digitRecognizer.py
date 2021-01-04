@@ -38,6 +38,7 @@ digitRecognizerHistory = digitRecognizer.fit(trainDataImg, trainDataLabel, batch
 
 ##------------------------------ PREDICTION ------------------------------##
 if __name__ == '__main__':
+    print("\n\n\n")
     prediction = digitRecognizer.predict(testDataImg)
 
     for i in range(10):
@@ -46,8 +47,8 @@ if __name__ == '__main__':
         print("Image Number: ", testImgNumber)
         print("Predictions Weightage: ", prediction[testImgNumber])
         print("Actual Weightage: ", testDataLabel[testImgNumber])
-        print("Predicted Number: ", np.where(prediction[testImgNumber] == prediction[testImgNumber].max())[0][0])   # Printing the Largest Number in the Predictions at an index
-        print("Actual Digit:", np.where(testDataLabel[testImgNumber] == testDataLabel[testImgNumber].max()[0][0]))  # Printing the Largest Number in the Test Data Labels at an index
+        print("Predicted Number: ", np.where(prediction[testImgNumber] == prediction[testImgNumber].max())[0][0])
+        print("Actual Digit: ", np.where(testDataLabel[testImgNumber] == testDataLabel[testImgNumber].max())[0])
 
         digitImg = testDataImg[testImgNumber].reshape((28, 28))
         plt.imshow(digitImg, cmap="Greys")
